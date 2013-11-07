@@ -219,7 +219,7 @@ public class LoginButton extends Button {
                 loginText = "Log in with Facebook";
             } else {
                 this.setBackgroundResource(R.drawable.com_facebook_button_blue);
-                this.setCompoundDrawablesWithIntrinsicBounds(R.drawable.com_facebook_inverse_icon, 0, 0, 0);
+//                this.setCompoundDrawablesWithIntrinsicBounds(R.drawable.com_facebook_inverse_icon, 0, 0, 0);
                 this.setCompoundDrawablePadding(
                         getResources().getDimensionPixelSize(R.dimen.com_facebook_loginview_compound_drawable_padding));
                 this.setPadding(getResources().getDimensionPixelSize(R.dimen.com_facebook_loginview_padding_left),
@@ -588,6 +588,7 @@ public class LoginButton extends Button {
     }
 
     private void setButtonText() {
+        /*
         if (sessionTracker != null && sessionTracker.getOpenSession() != null) {
             setText((logoutText != null) ? logoutText :
                     getResources().getString(R.string.com_facebook_loginview_log_out_button));
@@ -595,6 +596,7 @@ public class LoginButton extends Button {
             setText((loginText != null) ? loginText :
                     getResources().getString(R.string.com_facebook_loginview_log_in_button));
         }
+        */
     }
 
     private boolean initializeActiveSessionWithCachedToken(Context context) {
