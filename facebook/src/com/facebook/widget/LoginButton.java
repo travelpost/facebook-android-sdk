@@ -63,8 +63,8 @@ public class LoginButton extends Button {
     private Session userInfoSession = null; // the Session used to fetch the current user info
     private boolean confirmLogout;
     private boolean fetchUserInfo;
-    private String loginText;
-    private String logoutText;
+//    private String loginText;
+//    private String logoutText;
     private UserInfoChangedCallback userInfoChangedCallback;
     private Fragment parentFragment;
     private LoginButtonProperties properties = new LoginButtonProperties();
@@ -216,7 +216,7 @@ public class LoginButton extends Button {
                 // of a background resource.
                 this.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
                 // hardcoding in edit mode as getResources().getString() doesn't seem to work in IntelliJ
-                loginText = "Log in with Facebook";
+//                loginText = "Log in with Facebook";
             } else {
                 this.setBackgroundResource(R.drawable.com_facebook_button_blue);
 //                this.setCompoundDrawablesWithIntrinsicBounds(R.drawable.com_facebook_inverse_icon, 0, 0, 0);
@@ -582,8 +582,8 @@ public class LoginButton extends Button {
         TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.com_facebook_login_view);
         confirmLogout = a.getBoolean(R.styleable.com_facebook_login_view_confirm_logout, true);
         fetchUserInfo = a.getBoolean(R.styleable.com_facebook_login_view_fetch_user_info, true);
-        loginText = a.getString(R.styleable.com_facebook_login_view_login_text);
-        logoutText = a.getString(R.styleable.com_facebook_login_view_logout_text);
+//        loginText = a.getString(R.styleable.com_facebook_login_view_login_text);
+//        logoutText = a.getString(R.styleable.com_facebook_login_view_logout_text);
         a.recycle();
     }
 
